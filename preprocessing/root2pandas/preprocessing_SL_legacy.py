@@ -82,27 +82,27 @@ STXS_Stage0 = "abs(GenHiggs_Eta) < 2.5"
 # define output classes
 ttH_categories = root2pandas.EventCategories()
 ttH_categories.addCategory("ttH", selection = None)
-ttH_categories.addCategory("ttHbb",     selection = "(matchH_ft_RecoHiggs_matchable > 0.)")
-ttH_categories.addCategory("ttHnonbb",  selection = "(matchH_ft_RecoHiggs_matchable <= 0.)")
+#ttH_categories.addCategory("ttHbb",     selection = "(matchH_ft_RecoHiggs_matchable > 0.)")
+#ttH_categories.addCategory("ttHnonbb",  selection = "(matchH_ft_RecoHiggs_matchable <= 0.)")
 
-ttH_categories.addCategory("ttH_STXS_0", selection = STXS_Stage0 + " and GenHiggs_Pt >= 0 and GenHiggs_Pt < 60")
-ttH_categories.addCategory("ttH_STXS_1", selection = STXS_Stage0 + " and GenHiggs_Pt >= 60 and GenHiggs_Pt < 120")
-ttH_categories.addCategory("ttH_STXS_2", selection = STXS_Stage0 + " and GenHiggs_Pt >= 120 and GenHiggs_Pt < 200")
-ttH_categories.addCategory("ttH_STXS_3", selection = STXS_Stage0 + " and GenHiggs_Pt >= 200 and GenHiggs_Pt < 300")
-ttH_categories.addCategory("ttH_STXS_4", selection = STXS_Stage0 + " and GenHiggs_Pt >= 300 ")
-
-
-ttH_categories.addCategory("ttHbb_STXS_0", selection = STXS_Stage0 + " and GenHiggs_Pt >= 0 and GenHiggs_Pt < 60 and (matchH_ft_RecoHiggs_matchable > 0.)")
-ttH_categories.addCategory("ttHbb_STXS_1", selection = STXS_Stage0 + " and GenHiggs_Pt >= 60 and GenHiggs_Pt < 120 and (matchH_ft_RecoHiggs_matchable > 0.)")
-ttH_categories.addCategory("ttHbb_STXS_2", selection = STXS_Stage0 + " and GenHiggs_Pt >= 120 and GenHiggs_Pt < 200 and (matchH_ft_RecoHiggs_matchable > 0.)")
-ttH_categories.addCategory("ttHbb_STXS_3", selection = STXS_Stage0 + " and GenHiggs_Pt >= 200 and GenHiggs_Pt < 300 and (matchH_ft_RecoHiggs_matchable > 0.)")
-ttH_categories.addCategory("ttHbb_STXS_4", selection = STXS_Stage0 + " and GenHiggs_Pt >= 300  and (matchH_ft_RecoHiggs_matchable > 0.)")
-
-ttH_categories.addCategory("ttHnonbb_STXS_0", selection = STXS_Stage0 + " and GenHiggs_Pt >= 0 and GenHiggs_Pt < 60 and (matchH_ft_RecoHiggs_matchable <= 0.)")
-ttH_categories.addCategory("ttHnonbb_STXS_1", selection = STXS_Stage0 + " and GenHiggs_Pt >= 60 and GenHiggs_Pt < 120 and (matchH_ft_RecoHiggs_matchable <= 0.)")
-ttH_categories.addCategory("ttHnonbb_STXS_2", selection = STXS_Stage0 + " and GenHiggs_Pt >= 120 and GenHiggs_Pt < 200 and (matchH_ft_RecoHiggs_matchable <= 0.)")
-ttH_categories.addCategory("ttHnonbb_STXS_3", selection = STXS_Stage0 + " and GenHiggs_Pt >= 200 and GenHiggs_Pt < 300 and (matchH_ft_RecoHiggs_matchable <= 0.)")
-ttH_categories.addCategory("ttHnonbb_STXS_4", selection = STXS_Stage0 + " and GenHiggs_Pt >= 300  and (matchH_ft_RecoHiggs_matchable <= 0.)")
+#ttH_categories.addCategory("ttH_STXS_0", selection = STXS_Stage0 + " and GenHiggs_Pt >= 0 and GenHiggs_Pt < 60")
+#ttH_categories.addCategory("ttH_STXS_1", selection = STXS_Stage0 + " and GenHiggs_Pt >= 60 and GenHiggs_Pt < 120")
+#ttH_categories.addCategory("ttH_STXS_2", selection = STXS_Stage0 + " and GenHiggs_Pt >= 120 and GenHiggs_Pt < 200")
+#ttH_categories.addCategory("ttH_STXS_3", selection = STXS_Stage0 + " and GenHiggs_Pt >= 200 and GenHiggs_Pt < 300")
+#ttH_categories.addCategory("ttH_STXS_4", selection = STXS_Stage0 + " and GenHiggs_Pt >= 300 ")
+#
+#
+#ttH_categories.addCategory("ttHbb_STXS_0", selection = STXS_Stage0 + " and GenHiggs_Pt >= 0 and GenHiggs_Pt < 60 and (matchH_ft_RecoHiggs_matchable > 0.)")
+#ttH_categories.addCategory("ttHbb_STXS_1", selection = STXS_Stage0 + " and GenHiggs_Pt >= 60 and GenHiggs_Pt < 120 and (matchH_ft_RecoHiggs_matchable > 0.)")
+#ttH_categories.addCategory("ttHbb_STXS_2", selection = STXS_Stage0 + " and GenHiggs_Pt >= 120 and GenHiggs_Pt < 200 and (matchH_ft_RecoHiggs_matchable > 0.)")
+#ttH_categories.addCategory("ttHbb_STXS_3", selection = STXS_Stage0 + " and GenHiggs_Pt >= 200 and GenHiggs_Pt < 300 and (matchH_ft_RecoHiggs_matchable > 0.)")
+#ttH_categories.addCategory("ttHbb_STXS_4", selection = STXS_Stage0 + " and GenHiggs_Pt >= 300  and (matchH_ft_RecoHiggs_matchable > 0.)")
+#
+#ttH_categories.addCategory("ttHnonbb_STXS_0", selection = STXS_Stage0 + " and GenHiggs_Pt >= 0 and GenHiggs_Pt < 60 and (matchH_ft_RecoHiggs_matchable <= 0.)")
+#ttH_categories.addCategory("ttHnonbb_STXS_1", selection = STXS_Stage0 + " and GenHiggs_Pt >= 60 and GenHiggs_Pt < 120 and (matchH_ft_RecoHiggs_matchable <= 0.)")
+#ttH_categories.addCategory("ttHnonbb_STXS_2", selection = STXS_Stage0 + " and GenHiggs_Pt >= 120 and GenHiggs_Pt < 200 and (matchH_ft_RecoHiggs_matchable <= 0.)")
+#ttH_categories.addCategory("ttHnonbb_STXS_3", selection = STXS_Stage0 + " and GenHiggs_Pt >= 200 and GenHiggs_Pt < 300 and (matchH_ft_RecoHiggs_matchable <= 0.)")
+#ttH_categories.addCategory("ttHnonbb_STXS_4", selection = STXS_Stage0 + " and GenHiggs_Pt >= 300  and (matchH_ft_RecoHiggs_matchable <= 0.)")
 
 ttHnonbb_categories = root2pandas.EventCategories()
 ttHnonbb_categories.addCategory("ttH",       selection = None)
@@ -132,10 +132,10 @@ ttbar_categories.addCategory("ttcc",        selection = "(GenEvt_I_TTPlusBB == 0
 
 ttbb_categories = root2pandas.EventCategories()
 #ttbb_categories.addCategory("tthf",        selection = "(GenEvt_I_TTPlusBB >= 1 and GenEvt_I_TTPlusCC == 0)")
-ttbb_categories.addCategory("ttmb",        selection = "((GenEvt_I_TTPlusBB == 1 or GenEvt_I_TTPlusBB == 3) and GenEvt_I_TTPlusCC == 0)")
-#ttbar_categories.addCategory("ttbb",        selection = "(GenEvt_I_TTPlusBB == 3 and GenEvt_I_TTPlusCC == 0)")
+#ttbb_categories.addCategory("ttmb",        selection = "((GenEvt_I_TTPlusBB == 1 or GenEvt_I_TTPlusBB == 3) and GenEvt_I_TTPlusCC == 0)")
+ttbb_categories.addCategory("ttbb",        selection = "(GenEvt_I_TTPlusBB == 3 and GenEvt_I_TTPlusCC == 0)")
 #ttbb_categories.addCategory("ttb",         selection = "(GenEvt_I_TTPlusBB == 1 and GenEvt_I_TTPlusCC == 0)")
-ttbb_categories.addCategory("tt2b",        selection = "(GenEvt_I_TTPlusBB == 2 and GenEvt_I_TTPlusCC == 0)")
+#ttbb_categories.addCategory("tt2b",        selection = "(GenEvt_I_TTPlusBB == 2 and GenEvt_I_TTPlusCC == 0)")
 
 #ttZ_categories = root2pandas.EventCategories()
 #ttZ_categories.addCategory("ttZ", selection = None)
@@ -173,76 +173,79 @@ dataset.addBaseSelection(base_selection)
 
 
 
-ntuplesPath2018 = "/nfs/dust/cms/user/vdlinden/legacyTTH/ntuples/legacy_2018_ttH_newJEC/"
-ntuplesPath2017 = "/nfs/dust/cms/user/swieland/ttH_legacy/ntupleHadded_2017_JECgroups_newGT/"
-ntuplesPath2016 = "/nfs/dust/cms/user/vdlinden/legacyTTH/ntuples/legacy_2016_ttH_newJEC_v3/"
-memPath = "/nfs/dust/cms/user/swieland/ttH_legacy/MEMdatabase/mem_final/"
+ntuplesPath = "/nfs/dust/cms/group/ttx-kit/ntuples_ttH/2017"
+#ntuplesPath2018 = "/nfs/dust/cms/user/vdlinden/legacyTTH/ntuples/legacy_2018_ttH_newJEC/"
+#ntuplesPath2017 = "/nfs/dust/cms/user/swieland/ttH_legacy/ntupleHadded_2017_JECgroups_newGT/"
+#ntuplesPath2016 = "/nfs/dust/cms/user/vdlinden/legacyTTH/ntuples/legacy_2016_ttH_newJEC_v3/"
+#memPath = "/nfs/dust/cms/user/swieland/ttH_legacy/MEMdatabase/mem_final/"
 
 # add samples to dataset
-dataset.addSample(
-    sampleName  = "ttH_18",
-    ntuples     = ntuplesPath2018+"/ttHTobb_M125_TuneCP5_13TeV-powheg-pythia8/*nominal*.root",
-    categories  = ttH_categories,
-    lumiWeight  = 59.7,
-    # selections  = trigger_sel_18,
-    selections  = "(Evt_Odd == 1) and " + trigger_sel_18,
-    MEMs        = memPath+"2018/ttHTobb_M125_TuneCP5_13TeV-powheg-pythia8.root",
-    friendTrees = friendTrees_2018
-    ) 
-
-dataset.addSample(
-    sampleName  = "ttHnonbb_18",
-    ntuples     = ntuplesPath2018+"/ttHToNonbb_M125_TuneCP5_13TeV-powheg-pythia8/*nominal*.root",
-    categories  = ttHnonbb_categories,
-    lumiWeight  = 59.7,
-    selections  = "(Evt_Odd == 1) and " + trigger_sel_18,
-    MEMs        = memPath+"2018/ttHToNonbb_M125_TuneCP5_13TeV-powheg-pythia8.root",
-    friendTrees = friendTrees_2018
-    ) 
+#dataset.addSample(
+#    sampleName  = "ttH_18",
+#    ntuples     = ntuplesPath2018+"/ttHTobb_M125_TuneCP5_13TeV-powheg-pythia8/*nominal*.root",
+#    categories  = ttH_categories,
+#    lumiWeight  = 59.7,
+#    # selections  = trigger_sel_18,
+#    selections  = "(Evt_Odd == 1) and " + trigger_sel_18,
+#    MEMs        = memPath+"2018/ttHTobb_M125_TuneCP5_13TeV-powheg-pythia8.root",
+#    friendTrees = friendTrees_2018
+#    ) 
+#
+#dataset.addSample(
+#    sampleName  = "ttHnonbb_18",
+#    ntuples     = ntuplesPath2018+"/ttHToNonbb_M125_TuneCP5_13TeV-powheg-pythia8/*nominal*.root",
+#    categories  = ttHnonbb_categories,
+#    lumiWeight  = 59.7,
+#    selections  = "(Evt_Odd == 1) and " + trigger_sel_18,
+#    MEMs        = memPath+"2018/ttHToNonbb_M125_TuneCP5_13TeV-powheg-pythia8.root",
+#    friendTrees = friendTrees_2018
+#    ) 
 
 dataset.addSample(
     sampleName  = "ttH_17",
-    ntuples     = ntuplesPath2017+"/ttHTobb_M125_TuneCP5_13TeV-powheg-pythia8_new_pmx/*nominal*.root",
+    ntuples     = ntuplesPath+"/ttHTobb_M125_TuneCP5_13TeV-powheg-pythia8_new_pmx/*nominal*.root",
     categories  = ttH_categories,
     lumiWeight  = 41.5,
-    selections  = "(Evt_Odd == 1) and " + trigger_sel_17,
-    # selections  = "(Evt_Odd == 1)",
-    MEMs        = memPath+"2017/ttHTobb_M125_TuneCP5_13TeV-powheg-pythia8.root",
-    friendTrees = friendTrees_2017
-    )
-
-dataset.addSample(
-    sampleName  = "ttHnonbb_17",
-    ntuples     = ntuplesPath2017+"/ttHToNonbb_M125_TuneCP5_13TeV-powheg-pythia8_new_pmx/*nominal*.root",
-    categories  = ttHnonbb_categories,
-    lumiWeight  = 41.5,
+    #selections  = "(N_Jets == 6) and " + trigger_sel_17,
     selections  = trigger_sel_17,
+    #selections  = "(Evt_Odd == 1) and " + trigger_sel_17,
     # selections  = "(Evt_Odd == 1)",
-    MEMs        = memPath+"2017/ttHToNonbb_M125_TuneCP5_13TeV-powheg-pythia8.root",
-    friendTrees = friendTrees_2017
+#    MEMs        = memPath+"2017/ttHTobb_M125_TuneCP5_13TeV-powheg-pythia8.root",
+#    friendTrees = friendTrees_2017
     )
 
-dataset.addSample(
-    sampleName  = "ttH_16",
-    ntuples     = ntuplesPath2016+"/ttHTobb_M125_TuneCP5_13TeV-powheg-pythia8/*nominal*.root",
-    categories  = ttH_categories,
-    lumiWeight  = 35.9,
-    selections  = "(Evt_Odd == 1) and " + trigger_sel_16,
-    #selections  = "(Evt_Odd == 1)",
-    MEMs        = memPath+"2016/ttHTobb_M125_TuneCP5_13TeV-powheg-pythia8.root",
-    friendTrees = friendTrees_2016
-    )
-
-dataset.addSample(
-    sampleName  = "ttHnonbb_16",
-    ntuples     = ntuplesPath2016+"/ttHToNonbb_M125_TuneCP5_13TeV-powheg-pythia8/*nominal*.root",
-    categories  = ttHnonbb_categories,
-    lumiWeight  = 35.9,
-    selections  = "(Evt_Odd == 1) and " + trigger_sel_16,
-    #selections  = "(Evt_Odd == 1)",
-    MEMs        = memPath+"2016/ttHToNonbb_M125_TuneCP5_13TeV-powheg-pythia8.root",
-    friendTrees = friendTrees_2016
-    )
+#dataset.addSample(
+#    sampleName  = "ttHnonbb_17",
+#    ntuples     = ntuplesPath2017+"/ttHToNonbb_M125_TuneCP5_13TeV-powheg-pythia8_new_pmx/*nominal*.root",
+#    categories  = ttHnonbb_categories,
+#    lumiWeight  = 41.5,
+#    selections  = trigger_sel_17,
+#    # selections  = "(Evt_Odd == 1)",
+#    MEMs        = memPath+"2017/ttHToNonbb_M125_TuneCP5_13TeV-powheg-pythia8.root",
+#    friendTrees = friendTrees_2017
+#    )
+#
+#dataset.addSample(
+#    sampleName  = "ttH_16",
+#    ntuples     = ntuplesPath2016+"/ttHTobb_M125_TuneCP5_13TeV-powheg-pythia8/*nominal*.root",
+#    categories  = ttH_categories,
+#    lumiWeight  = 35.9,
+#    selections  = "(Evt_Odd == 1) and " + trigger_sel_16,
+#    #selections  = "(Evt_Odd == 1)",
+#    MEMs        = memPath+"2016/ttHTobb_M125_TuneCP5_13TeV-powheg-pythia8.root",
+#    friendTrees = friendTrees_2016
+#    )
+#
+#dataset.addSample(
+#    sampleName  = "ttHnonbb_16",
+#    ntuples     = ntuplesPath2016+"/ttHToNonbb_M125_TuneCP5_13TeV-powheg-pythia8/*nominal*.root",
+#    categories  = ttHnonbb_categories,
+#    lumiWeight  = 35.9,
+#    selections  = "(Evt_Odd == 1) and " + trigger_sel_16,
+#    #selections  = "(Evt_Odd == 1)",
+#    MEMs        = memPath+"2016/ttHToNonbb_M125_TuneCP5_13TeV-powheg-pythia8.root",
+#    friendTrees = friendTrees_2016
+#    )
 
 # dataset.addSample(
 #     sampleName  = "TTToSL_18",
@@ -253,15 +256,16 @@ dataset.addSample(
 #     MEMs        = memPath+"2018/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8.root",
 #     )
 
-# dataset.addSample(
-#     sampleName  = "TTToSL_17",
-#     ntuples     = ntuplesPath2017+"/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_new_pmx/*nominal*.root",
-#     categories  = ttbar_categories,
-#     lumiWeight  = 41.5,
-#     selections  = trigger_sel_17,
-#     #selections   = "(Evt_Odd == 1)",
-#     MEMs        = memPath+"2017/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8.root",
-#     )
+dataset.addSample(
+    sampleName  = "TTToSL_17",
+    ntuples     = ntuplesPath+"/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_new_pmx/*nominal*.root",
+    categories  = ttbar_categories,
+    lumiWeight  = 41.5,
+    #selections  = "(N_Jets == 6) and " + trigger_sel_17,
+    selections  = trigger_sel_17,
+    #selections   = "(Evt_Odd == 1)",
+    #MEMs        = memPath+"2017/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8.root",
+    )
 
 # dataset.addSample(
 #     sampleName  = "TTToSL_16",
@@ -283,15 +287,16 @@ dataset.addSample(
 #     MEMs        = memPath+"2018/TTbb_4f_TTToSemiLeptonic_TuneCP5-Powheg-Openloops-Pythia8.root",
 #     )
 
-# dataset.addSample(
-#     sampleName  = "TTbb_17",
-#     ntuples     = ntuplesPath2017+"/TTbb_Powheg_Openloops_new_pmx/*nominal*.root",
-#     categories  = ttbb_categories,
-#     lumiWeight  = 41.5,
-#     selections   = "(Evt_Odd == 1) and " + trigger_sel_17 ,
-#     # selections   = "(Evt_Odd == 1)",
-#     MEMs        = memPath+"2017/TTbb_Powheg_Openloops_SL.root",
-#     )
+dataset.addSample(
+    sampleName  = "TTbb_17",
+    ntuples     = ntuplesPath+"/TTbb_Powheg_Openloops_new_pmx/*nominal*.root",
+    categories  = ttbb_categories,
+    lumiWeight  = 41.5,
+    #selections   = "(N_Jets == 6) and " + trigger_sel_17 ,
+    selections   = trigger_sel_17,
+    # selections   = "(Evt_Odd == 1)",
+    #MEMs        = memPath+"2017/TTbb_Powheg_Openloops_SL.root",
+    )
 
 # dataset.addSample(
 #     sampleName  = "TTbb_16",
